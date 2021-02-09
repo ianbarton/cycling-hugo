@@ -1,0 +1,4 @@
+#+STARTUP: indent
+#+HUGO_BASE_DIR: /home/ian/Documents/emacs/web_sites/cycling.ianbarton.net.nikola_v8-hugo
+#+SEQ_TODO: TODO DRAFT DONE
+

@@ -1,0 +1,7 @@
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: ./posts
+#+TITLE: A Loop Through the Shropshire Town of Wem.
+#+DATE: 2020-02-18
+#+HUGO_TAGS: routes
+
+#+HTML: <iframe src="https://ridewithgps.com/embeds?type=route&id=30757026&title=A%20Loop%20Through%20Wem&metricUnits=true&sampleGraph=true" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
