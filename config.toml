@@ -2,6 +2,117 @@ baseURL = "http://cycling.ianbarton.co.uk/"
 languageCode = "en-gb"
 title = "Ian's Cycling Blog."
 baseurl = "http://cycling.ianbarton.co.uk/"
-theme = "hugo-theme-bootstrap4-blog"
+theme = "mainroad"
 [markup.goldmark.renderer]
   unsafe = true # This is *necessary* for ox-hugo to work well with Hugo 0.60.0+
+
+publishDir = "../docs"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[Author]
+  name = "Ian Barton"
+  bio = " Ian's cycling blog."
+  avatar = "img/avatar.png"
+
+[Params]
+  description = "Ian's Cycling Blog" # Description of your site
+  opengraph = true
+  twitter_cards = false
+  readmore = false # Show "Read more" button in list if true
+  authorbox = false
+  pager = true
+  post_meta = ["date", "categories"] # Order of post meta information
+  title = "Test"
+  # mainSections = ["contents"]
+
+[Params.logo]
+  subtitle = "Routes and Reviews" # Logo subtitle
+ # image = "img/IMG_20201227_144016.jpg" # Logo image. Path relative to "static"
+  # title = "A Test Title."
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "taglist"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+
+[menu]
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+pre = "<i class='fa fa-heart'></i>"
+url = "/"
+weight = -110
+
+[[menu.main]]
+name = "About"
+post = ""
+pre = "<i class='fa fa-road'></i>"
+url = "/about"
+weight = -105
+
+# [[menu.main]]
+# name = "Highways"
+# post = ""
+# pre = "<i class='fa fa-road'></i>"
+# url = "/highways"
+# weight = -100
+
+# [[menu.main]]
+# name = "Photos"
+# post = ""
+# pre = "<i class='fa fa-road'></i>"
+# url = "/photos"
+# weight = -90
+
+[imaging]
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See https://github.com/disintegration/imaging
+resampleFilter = "box"
+
+# Default JPEG quality setting. Default is 75.
+quality = 75
+
+# Anchor used when cropping pictures.
+# Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
+# Smart Cropping is content aware and tries to find the best crop for each image.
+# Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+anchor = "smart"
+
+# Default background color.
+# Hugo will preserve transparency for target formats that supports it,
+# but will fall back to this color for JPEG.
+# Expects a standard HEX color string with 3 or 6 digits.
+# See https://www.google.com/search?q=color+picker
+bgColor = "#ffffff"
+
+[imaging.exif]
+ # Regexp matching the fields you want to Exclude from the (massive) set of Exif info
+# available. As we cache this info to disk, this is for performance and
+# disk space reasons more than anything.
+# If you want it all, put ".*" in this config setting.
+# Note that if neither this or ExcludeFields is set, Hugo will return a small
+# default set.
+includeFields = ""
+
+# Regexp matching the Exif fields you want to exclude. This may be easier to use
+# than IncludeFields above, depending on what you want.
+excludeFields = ""
+
+# Hugo extracts the "photo taken" date/time into .Date by default.
+# Set this to true to turn it off.
+disableDate = false
+
+# Hugo extracts the "photo taken where" (GPS latitude and longitude) into
+# .Long and .Lat. Set this to true to turn it off.
+disableLatLong = false
