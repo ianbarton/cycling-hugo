@@ -1,0 +1,7 @@
+baseURL = "http://cycling.ianbarton.co.uk/"
+languageCode = "en-gb"
+title = "Ian's Cycling Blog."
+baseurl = "http://cycling.ianbarton.co.uk/"
+theme = "hugo-theme-bootstrap4-blog"
+[markup.goldmark.renderer]
+  unsafe = true # This is *necessary* for ox-hugo to work well with Hugo 0.60.0+
